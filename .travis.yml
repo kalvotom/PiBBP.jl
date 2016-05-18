@@ -13,4 +13,4 @@ script:
   - julia -e 'Pkg.clone(pwd()); Pkg.test("PiBBP"; coverage=true)'
 after_success:
   - julia -e 'Pkg.clone("https://github.com/kalvotom/PiBBP.jl")'
-  - julia -e 'cd(Pkg.dir("PiBBP")); include(joinpath("docs", "make.jl"))'
+  - julia -e 'cd(Pkg.dir("PiBBP")); Pkg.clone("https://github.com/MichaelHatherly/Documenter.jl"); include(joinpath("docs", "make.jl"))'
