@@ -1,5 +1,7 @@
 module PiBBP
+ 
+  export digpi
 
-# package code goes here
+  include("bbp.jl")
 
 end # module

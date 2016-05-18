@@ -2,4 +2,5 @@ using PiBBP
 using Base.Test
 
 # write your own tests here
-@test 1 == 1
+@test digpi(0) == 2
+@test digpi(1000000) == 6
