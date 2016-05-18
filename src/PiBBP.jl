@@ -1,7 +1,7 @@
 module PiBBP
  
-  export digpi
+export digpi
 
-  include("bbp.jl")
+include("bbp.jl")
 
 end # module

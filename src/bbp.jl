@@ -1,12 +1,15 @@
 """
+TODO rat.
 """
 rat(d, k, j) = powermod(16, d - k, 8k + j) / (8k + j)
 
 """
+TODO frac_part.
 """
 frac_part(x) = x - floor(x)
 
 """
+TODO sigma.
 """
 function sigma(d, j)
   r = 0.
@@ -26,6 +29,7 @@ function sigma(d, j)
 end
 
 """
+TODO digpi.
 """
 function digpi(d)
   r = 4*sigma(d, 1) - 2*sigma(d, 4) - sigma(d, 5) - sigma(d, 6)
