@@ -3,6 +3,7 @@
 ## Project status
 
 [![Tests](https://travis-ci.org/kalvotom/PiBBP.jl.svg?branch=master)](https://travis-ci.org/kalvotom/PiBBP.jl)
+[![Coverage Status](https://coveralls.io/repos/github/kalvotom/PiBBP.jl/badge.svg?branch=master)](https://coveralls.io/github/kalvotom/PiBBP.jl?branch=master)
 
 ## Documentation
 
