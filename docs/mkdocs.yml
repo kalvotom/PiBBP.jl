@@ -1,7 +1,7 @@
 site_name:        PiBBP.jl
 repo_url:         https://github.com/kalvotom/PiBBP.jl
 site_description: Julia toy implementation of Bailey-Borwein-Plouffe algorithm.
-site_author:      kalvotom
+site_author:      Tomáš Kalvoda
 
 theme: readthedocs
 
