@@ -1,4 +1,6 @@
 # PiBBP.jl Documentation
 
-    {docs}
-    digpi
+```@docs
+PiBPP
+digpi
+```
