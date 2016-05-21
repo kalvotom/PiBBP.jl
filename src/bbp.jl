@@ -1,20 +1,26 @@
 """
-TODO rat.
+For integer ``d``, ``k``, and ``j`` compute
+``16^{d-k} \\bmod 8k + j ) / (8k + j)``.
 """
-rat(d, k, j) = powermod(16, d - k, 8k + j) / (8k + j)
+ratio(d, k, j) = powermod(16, d - k, 8k + j) / (8k + j)
 
 """
-TODO frac_part.
+Fractional part of a real number ``x``.
 """
 frac_part(x) = x - floor(x)
 
 """
-TODO sigma.
+For integer ``d`` and ``j`` computes the fractional part of
+`` \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} +
+   \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)} ``.
 """
 function sigma(d, j)
   r = 0.
   for k in 0:d
-    r = frac_part(r + rat(d, k, j))
+    r += ratio(d, k, j)
+    if r > 1.0
+      r = frac_part(r)
+    end
   end
 
   k = d + 1
@@ -29,7 +35,7 @@ function sigma(d, j)
 end
 
 """
-TODO digpi.
+Compute ``d+1``th hexadecimal digit of ``\\pi``. 
 """
 function digpi(d)
   r = 4*sigma(d, 1) - 2*sigma(d, 4) - sigma(d, 5) - sigma(d, 6)
