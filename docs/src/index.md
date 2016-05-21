@@ -1,6 +1,9 @@
 # PiBBP.jl Documentation
 
 ```@docs
-PiBPP
+PiBBP
 digpi
+PiBBP.frac_part
+PiBBP.sigma
+PiBBP.ratio
 ```
