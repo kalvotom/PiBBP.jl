@@ -1,6 +1,6 @@
 """
 For integer \$d\$, \$k\$, and \$j\$ compute
-\$\$ 16^{d-k} \\bmod 8k + j ) / (8k + j). \$\$
+\$\$ ( 16^{d-k} \\bmod 8k + j ) / (8k + j). \$\$
 """
 ratio(d, k, j) = powermod(16, d - k, 8k + j) / (8k + j)
 
