@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "PiBBP.jl Documentation\n\n\n#\n\n\nPiBBP\n \n \nModule\n.\n\n\nA toy Julia implementation of \nBailey-Borwein-Plouffe (BBP) alogithm\n for computation of hexadecimal digits of Pi.\n\n\n#\n\n\nPiBBP.digpi\n \n \nFunction\n.\n\n\nCompute $d+1$th hexadecimal digit of $\\pi$. \n\n\n#\n\n\nPiBBP.frac_part\n \n \nFunction\n.\n\n\nFractional part of a real number $x$.\n\n\n#\n\n\nPiBBP.sigma\n \n \nFunction\n.\n\n\nFor integer $d$ and $j$ computes the fractional part of :$ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. :$\n\n\n#\n\n\nPiBBP.ratio\n \n \nFunction\n.\n\n\nFor integer $d$, $k$, and $j$ compute :$ 16^{d-k} \\bmod 8k + j ) / (8k + j). :$", 
+            "text": "PiBBP.jl Documentation\n\n\n#\n\n\nPiBBP\n \n \nModule\n.\n\n\nA toy Julia implementation of \nBailey-Borwein-Plouffe (BBP) alogithm\n for computation of hexadecimal digits of Pi.\n\n\n#\n\n\nPiBBP.digpi\n \n \nFunction\n.\n\n\nCompute $d+1$th hexadecimal digit of $\\pi$. \n\n\n#\n\n\nPiBBP.frac_part\n \n \nFunction\n.\n\n\nFractional part of a real number $x$.\n\n\n#\n\n\nPiBBP.sigma\n \n \nFunction\n.\n\n\nFor integer $d$ and $j$ computes the fractional part of :$ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. :$\n\n\n#\n\n\nPiBBP.ratio\n \n \nFunction\n.\n\n\nFor integer $d$, $k$, and $j$ compute :$ ( 16^{d-k} \\bmod 8k + j ) / (8k + j). :$", 
             "title": "Home"
         }, 
         {
             "location": "/#pibbpjl-documentation", 
-            "text": "#  PiBBP     Module .  A toy Julia implementation of  Bailey-Borwein-Plouffe (BBP) alogithm  for computation of hexadecimal digits of Pi.  #  PiBBP.digpi     Function .  Compute $d+1$th hexadecimal digit of $\\pi$.   #  PiBBP.frac_part     Function .  Fractional part of a real number $x$.  #  PiBBP.sigma     Function .  For integer $d$ and $j$ computes the fractional part of :$ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. :$  #  PiBBP.ratio     Function .  For integer $d$, $k$, and $j$ compute :$ 16^{d-k} \\bmod 8k + j ) / (8k + j). :$", 
+            "text": "#  PiBBP     Module .  A toy Julia implementation of  Bailey-Borwein-Plouffe (BBP) alogithm  for computation of hexadecimal digits of Pi.  #  PiBBP.digpi     Function .  Compute $d+1$th hexadecimal digit of $\\pi$.   #  PiBBP.frac_part     Function .  Fractional part of a real number $x$.  #  PiBBP.sigma     Function .  For integer $d$ and $j$ computes the fractional part of :$ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. :$  #  PiBBP.ratio     Function .  For integer $d$, $k$, and $j$ compute :$ ( 16^{d-k} \\bmod 8k + j ) / (8k + j). :$", 
             "title": "PiBBP.jl Documentation"
         }
     ]
