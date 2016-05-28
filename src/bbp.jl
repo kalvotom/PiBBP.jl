@@ -1,7 +1,7 @@
 
 """
-For integers ``a``, ``b``, and ``n`` efficiently compute
-``a^b \\bmod n``.
+For integers \$a\$, \$b\$, and \$n\$ efficiently compute
+\$a^b \\bmod n\$.
 """
 @fastmath function power_mod(a, b, n)
   r = 1
@@ -17,7 +17,7 @@ end
 
 """
 For integer \$d\$, \$k\$, and \$j\$ compute
-\$\$ ( 16^{d-k} \\bmod 8k + j ) / (8k + j). \$\$
+\\[ ( 16^{d-k} \\bmod 8k + j ) / (8k + j). \\]
 """
 ratio(d, k, j) = power_mod(16, d - k, 8k + j) / (8k + j)
 
@@ -28,7 +28,7 @@ frac_part(x) = x - floor(x)
 
 """
 For integer \$d\$ and \$j\$ computes the fractional part of
-\$\$ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. \$\$
+\\[ \\sum_{k=0}^d \\frac{16^{d-k} \\bmod 8k+j}{8k+j} + \\sum_{k=d+1}^\\infty \\frac{1}{16^{k-d} (8k+j)}. \\]
 """
 function sigma(d, j)
   r = 0.
