@@ -17,7 +17,5 @@ using Base.Test
 # It actually computes fractional part of $\pi$.
 #
 
-ds = pmap(digpi, 0:14)
-z  = sum(j -> ds[j] / 16^j, 1:length(ds))
-
-@test_approx_eq Float64(pi - 3.) z
+@test pi - (3 + sum(digpi(n) / 16^(n+1) for n in 0:14)) ≈ 0
+@test pi - (3 + sum(digpi(n) / big(16)^(n+1) for n in 0:64)) ≈ 0
