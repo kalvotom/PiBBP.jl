@@ -39,7 +39,7 @@ function sigma(d, j)
     end
   end
 
-  kk  = 8. * (d + 1) 
+  kk  = 8. * (d + 1) + j
   u   = 1 / 16
   rat = u / kk
 
